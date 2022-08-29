@@ -1,0 +1,71 @@
+:root{
+     --color:#001e5e;
+     ---color:wheat;
+     
+
+}
+body{
+    margin:0;
+    padding:0;
+    color:var(--color);
+    background-color: antiquewhite;
+    font-family:'Times New Roman', Times, serif ;
+
+}
+*{
+    box-sizing: border-box;   
+}
+.container{
+    padding:40px;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.board{
+    width:450px;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.box{
+    width: 150px;
+    height:150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px var(--color);
+    background-image: url("mole-hidden.png");
+    background-size: cover;
+    background-color: whitesmoke;
+}
+.mole{
+ 
+    background-image: url("mole.png");
+    background-size: cover;
+}
+#appr{
+    margin-top: 2%;
+    font-size: larger;
+}
+
+#restart{
+    margin-top:20px;
+    padding :10px 20px;
+    color:black;
+    background-color: var(---color);
+    border-color: black;
+    border-radius: 5px;
+
+    font-size: 1rem;
+ transition:200ms;
+
+}
+#restart:hover{
+    transform:translateY(-5px);
+
+}
